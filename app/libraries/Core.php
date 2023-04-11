@@ -11,7 +11,23 @@ class Core
 
   public function __construct()
   {
-    print_r($this->getUrl());
+    $url = $this->getUrl();
+
+    // Look in controllers for first value
+    if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
+
+      // If exists, set as controller
+      $this->currentController = ucwords($url[0]);
+
+      // Unset 0 index
+      unset($url[0]);
+    }
+
+    // Require controller
+    require_once '../app/controllers/' . $this->currentController . '.php';
+
+    // Instantiate controller class
+    $this->currentController = new $this->currentController;
   }
 
   public function getUrl()
