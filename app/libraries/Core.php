@@ -14,7 +14,7 @@ class Core
     $url = $this->getUrl();
 
     // Look in controllers for first value
-    if(isset($url[0]) && file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
+    if (isset($url[0]) && file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
       // If exists, set as controller
       $this->currentController = ucwords($url[0]);
       // Unset 0 index
@@ -33,7 +33,7 @@ class Core
         // Unset 1 index
         unset($url[1]);
       }
-    }    
+    }
 
     // Get params
     $this->params = $url ? array_values($url) : [];

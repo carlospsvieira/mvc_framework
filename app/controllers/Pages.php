@@ -1,14 +1,17 @@
 <?php
-  class Pages {
-    public function __construct() {
-
-    }
-
-    public function index() {
-      echo 'Index work';
-    }
-
-    public function about($id) {
-      echo $id;
-    }
+class Pages extends Controller
+{
+  public function __construct()
+  {
   }
+
+  public function index()
+  {
+    $this->view('hello');
+  }
+
+  public function about($id)
+  {
+    echo $id;
+  }
+}
