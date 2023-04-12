@@ -1,7 +1,8 @@
 # mvc_framework
 
-My PHP MVC framework setup
+My PHP MVC framework setup (Object oriented)
 
-- Creates all needed folders for a PHP CRUD app (MVC, Libraries, Helpers, Config, Public, etc)
-- Rewrite engines and rules, see them in .htaccess files (Apache server only).
+- Architects all needed folders for a PHP MVC framework (MVC, Libraries, Helpers, Config, Public, etc)
+- Rewrites engines and rules for Apache server, if any other, it may be adjusted to your preference in .htaccess files.
 - URL methods construct in Core class.
+- Loads MVC functionalities all together, application ready.
