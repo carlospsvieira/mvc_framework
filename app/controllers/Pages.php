@@ -7,7 +7,7 @@ class Pages extends Controller
 
   public function index()
   {
-    $this->view('index');
+    $this->view('pages/index');
   }
 
   public function about()
