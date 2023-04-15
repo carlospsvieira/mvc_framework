@@ -1,0 +1,16 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,134,255,1) 100%, rgba(9,9,121,1) 100%);
+}
+
+.main-heading {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px #454545;
+}
