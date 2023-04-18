@@ -13,7 +13,7 @@ class Core
   {
     $url = $this->getUrl();
 
-    // // Handle URL without without controller class name in it //
+    // // Handle base URL without adding controller class name in it //
     //  if ($url[0] === 'add-product') {
     //   // Set controller to Pages
     //   $this->currentController = 'Pages';
